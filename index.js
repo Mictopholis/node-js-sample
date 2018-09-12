@@ -15,7 +15,7 @@ app.listen(app.get('port'), function() {
 var fs = require('fs')
 var conversion = require("phantom-html-to-pdf")();
 conversion({ html: "<h1>Hello World</h1>" }, function(err, pdf) {
-  var output = fs.createWriteStream('/path/to/output.pdf')
+  var output = fs.createWriteStream('/home/site/wwwroot/output.pdf')
   console.log(pdf.logs);
   console.log(pdf.numberOfPages);
     // since pdf.stream is a node.js stream you can use it
