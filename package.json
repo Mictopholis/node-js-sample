@@ -7,7 +7,9 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "phantom-html-to-pdf": "^0.5.4",
+    "bcrypt": "^3.0.0"
   },
   "engines": {
     "node": "4.0.0"
