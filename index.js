@@ -11,9 +11,12 @@ app.get('/', function(request, response) {
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 })
-/*
+
 var fs = require('fs')
 var conversion = require("phantom-html-to-pdf")();
+
+
+/*
 conversion({ html: "<h1>Hello World</h1>" }, function(err, pdf) {
   var output = fs.createWriteStream('/home/site/wwwroot/output.pdf')
   console.log(pdf.logs);
